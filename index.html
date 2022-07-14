@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Receiving Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="top_ribbon_rec_screen">
+        <div id="top_ribbon_left">  
+            <button style="background-color:white; border: none; border-radius: 20px; margin:20px;"> <img src="/DevMountainProjects/Capstone/Niagara Logo.png" alt="Niagara Logo" width="250" height="125" style="margin: 20px;"></button>
+            <p style="font-size: 25px; margin: 20px; color: white;">Click Logo To Log Out</p>
+        </div>
+        <div id="top_ribbon_right">
+            <p id="current_date" style="font-size: 40px; margin: 20px; color: white;">
+                    <script>
+                    document.getElementById("current_date").innerHTML = Date();
+                    </script>
+            </p>
+        </div>
+    </div>
+    <div id="main_body_split">
+    <div id="resin_rec_form"> 
+        <form action="" method="post">
+            <div style="font-size: 20px;margin: 10px;color: white;">Resin Receiving</div>
+            <input id="text" type="text" name="material_type" placeholder="Enter material description"><br><br>
+            <input id="text" type="text" name="lot_num" placeholder="Enter lot number"><br><br>
+            <input id="text" type="text" name="silo_num" placeholder="Enter silo number"><br><br>
+            <input id="button" type="submit" value="submit"><br><br>
+        </form>
+    </div>  
+    <div class="silos"> 
+        <img id="silo" src="/DevMountainProjects/Capstone/silo.jpg" alt="Niagara Logo" width="500" height="500">
+        <h3>Silo 1</h3>
+        <table> 
+            <thead>
+              <tr>
+                <th>Material Description</th>
+                <th>Lot Number</th>
+                <th>Del.</th>
+              </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>text1.1</td>
+                 <td>text1.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+                 <td>text2.1</td>
+                 <td>text2.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+               </tr>
+            </tbody>
+          </table>
+    </div>  
+    <div class="silos"> 
+        <img id="silo" src="/DevMountainProjects/Capstone/silo.jpg" alt="Niagara Logo" width="500" height="500">
+        <h3>Silo 2</h3>
+        <table> 
+            <thead>
+              <tr>
+                <th>Material Description</th>
+                <th>Lot Number</th>
+                <th>Del.</th>
+              </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>text1.1</td>
+                 <td>text1.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+                 <td>text2.1</td>
+                 <td>text2.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+               </tr>
+            </tbody>
+          </table>
+    </div> 
+    <div class="silos"> 
+        <img id="silo" src="/DevMountainProjects/Capstone/silo.jpg" alt="Niagara Logo" width="500" height="500">
+        <h3>Silo 3</h3>
+        <table> 
+            <thead>
+              <tr>
+                <th>Material Description</th>
+                <th>Lot Number</th>
+                <th>Del.</th>
+              </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>text1.1</td>
+                 <td>text1.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+                 <td>text2.1</td>
+                 <td>text2.2</td>
+                 <td><button>Delete</button></td>
+               </tr>
+               <tr>
+               </tr>
+            </tbody>
+          </table>
+    </div> 
+    </div>
+
+<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/js"></script> -->
+</body>
+</html>
