@@ -9,116 +9,74 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <!-- <link rel="prev" href="/DevMountainProjects/Capstone/public/login.html"> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div id="top_ribbon_rec_screen">
         <div id="top_ribbon_left">  
-            <button style="background-color:white; border: none; border-radius: 20px; margin:20px;"> <img src="Niagara Logo.png" alt="Niagara Logo" width="250" height="125" style="margin: 20px;"></button>
-            <!-- <p style="font-size: 25px; margin: 20px; color: white;">Click Logo To Log Out</p> -->
+            <button style="background-color:white; border: none; border-radius: 20px; margin:20px;"> <img src="Niagara Logo.png" alt="Niagara Logo" width="300" height="125" style="margin: 20px;"></button>
         </div>
         <div id="top_ribbon_right">
             <p id="current_date" style="font-size: 40px; margin: 20px; color: white;">
                     <script>
-                    document.getElementById("current_date").innerHTML = Date();
+                      setInterval(function(){ 
+document.getElementById("current_date").innerHTML = Date();
+}, 1000);
                     </script>
             </p>
         </div>
     </div>
     <div id="main_body_split">
     <div id="resin_rec_form"> 
-        <form action="" method="post">
+          <form id="resin-form">
             <div style="font-size: 20px;margin: 10px;color: white;">Resin Receiving</div>
-            <input id="text" type="text" name="material_type" placeholder="Enter material description"><br><br>
-            <input id="text" type="text" name="lot_num" placeholder="Enter lot number"><br><br>
-            <input id="text" type="text" name="silo_num" placeholder="Enter silo number"><br><br>
-            <input id="button" type="submit" value="submit"><br><br>
+            <input id="material-description" type="text" name="material-description" placeholder="Enter material description"><br><br>
+            <input id="lot-number" type="text" name="lot-number" placeholder="Enter lot number"><br><br>
+            <button id="button">Add</button><br><br>
+            <p> Material Description is found on page 4 within box 3</p>
+            <p> Lot Number is found on page 5 within box 6</p>
         </form>
     </div>  
     <div class="silos"> 
         <img id="silo" src="silo.jpg" alt="Silo Image" width="500" height="500">
         <h3>Silo 1</h3>
-        <table> 
-            <thead>
-              <tr>
-                <th>Material Description</th>
-                <th>Lot Number</th>
-                <th>Del.</th>
-              </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>text1.1</td>
-                 <td>text1.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-                 <td>text2.1</td>
-                 <td>text2.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-               </tr>
-            </tbody>
-          </table>
+        <div id="resin_card_titles">
+        <h2>Num.</h2><h2>Material Description</h2><h2>Lot Number</h2>
+        </div>
+        <section id="resin-list">
+        
+      </section>
     </div>  
-    <div class="silos"> 
-        <img id="silo" src="silo.jpg" alt="Silo Image" width="500" height="500">
-        <h3>Silo 2</h3>
-        <table> 
-            <thead>
-              <tr>
-                <th>Material Description</th>
-                <th>Lot Number</th>
-                <th>Del.</th>
-              </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>text1.1</td>
-                 <td>text1.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-                 <td>text2.1</td>
-                 <td>text2.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-               </tr>
-            </tbody>
-          </table>
     </div> 
-    <div class="silos"> 
-        <img id="silo" src="silo.jpg" alt="Silo Image" width="500" height="500">
-        <h3>Silo 3</h3>
-        <table> 
-            <thead>
-              <tr>
-                <th>Material Description</th>
-                <th>Lot Number</th>
-                <th>Del.</th>
-              </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td>text1.1</td>
-                 <td>text1.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-                 <td>text2.1</td>
-                 <td>text2.2</td>
-                 <td><button>Delete</button></td>
-               </tr>
-               <tr>
-               </tr>
-            </tbody>
-          </table>
-    </div> 
-    </div>
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="/DevMountainProjects/Capstone/public/index.js"></script>
+
+<script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <table> 
+  <thead>
+    <tr>
+      <th>Material Description</th>
+      <th>Lot Number</th>
+      <th>Del.</th>
+    </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>text1.1</td>
+       <td>text1.2</td>
+       <td><button>Delete</button></td>
+     </tr>
+     <tr>
+       <td>text2.1</td>
+       <td>text2.2</td>
+       <td><button>Delete</button></td>
+     </tr>
+     <tr>
+     </tr>
+  </tbody>
+</table> -->
